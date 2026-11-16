@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container" id="app">
+
+        <aside class="sidebar" id="sidebar-nav">
+            <div class="sidebar-header" id="logo-container">
+                <h2 class="app-logo">Dashboard</h2>
+            </div>
+            <hr class="divider" id="divider-2">
+            <nav class="nav-menu" id="main-navigation">
+                <ul class="nav-list primary-nav">
+                    <li class="nav-item active" id="nav-home"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item" id="nav-profile"><a href="#" class="nav-link">Profile</a></li>
+                    <li class="nav-item" id="nav-messages"><a href="#" class="nav-link">Messages</a></li>
+                    <li class="nav-item" id="nav-history"><a href="#" class="nav-link">History</a></li>
+                    <li class="nav-item" id="nav-tasks"><a href="#" class="nav-link">Tasks</a></li>
+                    <li class="nav-item" id="nav-communities"><a href="#" class="nav-link">Communities</a></li>
+                </ul>
+                <ul class="nav-list secondary-nav">
+                    <li class="nav-item" id="nav-settings"><a href="#" class="nav-link">Settings</a></li>
+                    <li class="nav-item" id="nav-support"><a href="#" class="nav-link">Support</a></li>
+                    <li class="nav-item" id="nav-privacy"><a href="#" class="nav-link">Privacy</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content" id="main-content-area">
+            
+            <header class="header" id="dashboard-header">
+                <div class="header-top" id="header-top-row">
+                    <div class="search-container" id="search-bar-wrapper">
+                        <input type="search" placeholder="Search..." class="search-input" id="global-search">
+                    </div>
+                    <div class="user-quick-nav" id="quick-nav">
+                        <a href="#" class="notification-icon" id="notification-bell">🔔</a>
+                        <span class="user-avatar-sm" id="header-user-avatar">👤</span>
+                        <span class="username-display" id="header-username">Morgan Oakley</span>
+                    </div>
+                </div>
+                
+                <div class="header-bottom" id="header-bottom-row">
+                    <div class="user-welcome-box" id="welcome-container">
+                        <div class="user-avatar-lg-wrapper" id="large-avatar-wrap">
+                            <span class="user-avatar-lg" id="welcome-user-avatar">👤</span>
+                        </div>
+                        <div class="welcome-text-group" id="welcome-texts">
+                            <p class="greeting-text" id="greeting-msg">Hi there,</p>
+                            <h1 class="user-handle" id="user-full-handle">Sourkris (@sourkis)</h1>
+                        </div>
+                    </div>
+                    <div class="header-actions" id="action-buttons-group">
+                        <button type="button" class="btn btn-primary" id="btn-new">New</button>
+                        <button type="button" class="btn btn-secondary" id="btn-upload">Upload</button>
+                        <button type="button" class="btn btn-secondary" id="btn-share">Share</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid" id="content-grid-layout">
+                
+                <section class="projects-section" id="projects-section">
+                    <h2 class="section-title" id="projects-title">Your Projects</h2>
+                    <div class="projects-grid" id="projects-container">
+                        
+                        <article class="card project-card" id="project-super-cool">
+                            <div class="card-body" id="project-body-1">
+                                <h3 class="card-title" id="title-1">Super Cool Project</h3>
+                                <p class="card-text" id="text-1">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                            </div>
+                            <div class="card-actions" id="actions-1">
+                                <button class="action-btn star-btn" id="star-1">⭐</button>
+                                <button class="action-btn view-btn" id="view-1">👁️</button>
+                                <button class="action-btn share-btn" id="share-1">🔗</button>
+                            </div>
+                        </article>
+
+                        <article class="card project-card" id="project-less-cool">
+                            <div class="card-body" id="project-body-2">
+                                <h3 class="card-title" id="title-2">Less Cool Project</h3>
+                                <p class="card-text" id="text-2">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                            </div>
+                            <div class="card-actions" id="actions-2">
+                                <button class="action-btn star-btn" id="star-2">⭐</button>
+                                <button class="action-btn view-btn" id="view-2">👁️</button>
+                                <button class="action-btn share-btn" id="share-2">🔗</button>
+                            </div>
+                        </article>
+
+                        <article class="card project-card" id="project-impossible-app">
+                            <div class="card-body" id="project-body-3">
+                                <h3 class="card-title" id="title-3">Impossible App</h3>
+                                <p class="card-text" id="text-3">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                            </div>
+                            <div class="card-actions" id="actions-3">
+                                <button class="action-btn star-btn" id="star-3">⭐</button>
+                                <button class="action-btn view-btn" id="view-3">👁️</button>
+                                <button class="action-btn share-btn" id="share-3">🔗</button>
+                            </div>
+                        </article>
+
+                        <article class="card project-card" id="project-easy-peasy">
+                            <div class="card-body" id="project-body-4">
+                                <h3 class="card-title" id="title-4">Easy Peasy App</h3>
+                                <p class="card-text" id="text-4">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                            </div>
+                            <div class="card-actions" id="actions-4">
+                                <button class="action-btn star-btn" id="star-4">⭐</button>
+                                <button class="action-btn view-btn" id="view-4">👁️</button>
+                                <button class="action-btn share-btn" id="share-4">🔗</button>
+                            </div>
+                        </article>
+
+                        <article class="card project-card" id="project-ad-blocker">
+                            <div class="card-body" id="project-body-5">
+                                <h3 class="card-title" id="title-5">Ad Blocker</h3>
+                                <p class="card-text" id="text-5">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                            </div>
+                            <div class="card-actions" id="actions-5">
+                                <button class="action-btn star-btn" id="star-5">⭐</button>
+                                <button class="action-btn view-btn" id="view-5">👁️</button>
+                                <button class="action-btn share-btn" id="share-5">🔗</button>
+                            </div>
+                        </article>
+
+                        <article class="card project-card" id="project-money-maker">
+                            <div class="card-body" id="project-body-6">
+                                <h3 class="card-title" id="title-6">Money Maker</h3>
+                                <p class="card-text" id="text-6">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                            </div>
+                            <div class="card-actions" id="actions-6">
+                                <button class="action-btn star-btn" id="star-6">⭐</button>
+                                <button class="action-btn view-btn" id="view-6">👁️</button>
+                                <button class="action-btn share-btn" id="share-6">🔗</button>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <aside class="right-sidebar" id="right-sidebar-column">
+                    
+                    <section class="announcements-section" id="announcements-section">
+                        <h2 class="section-title" id="announcements-title">Announcements</h2>
+                        <div class="card announcements-card" id="announcements-card">
+                            <article class="announcement-item" id="announcement-1">
+                                <h3 class="announcement-heading" id="announcement-title-1">Site Maintenance</h3>
+                                <p class="announcement-desc" id="announcement-desc-1">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                            </article>
+                            <hr class="divider" id="divider-1">
+                            <article class="announcement-item" id="announcement-2">
+                                <h3 class="announcement-heading" id="announcement-title-2">Community Share Day</h3>
+                                <p class="announcement-desc" id="announcement-desc-2">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                            </article>
+                            <hr class="divider" id="divider-2">
+                            <article class="announcement-item" id="announcement-3">
+                                <h3 class="announcement-heading" id="announcement-title-3">Updated Privacy Policy</h3>
+                                <p class="announcement-desc" id="announcement-desc-3">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="trending-section" id="trending-section">
+                        <h2 class="section-title" id="trending-title">Trending</h2>
+                        <div class="card trending-card" id="trending-card">
+                            
+                            <div class="trending-item" id="trending-user-1">
+                                <span class="trending-avatar" id="avatar-tegan">👤</span>
+                                <div class="trending-info" id="info-tegan">
+                                    <h4 class="trending-handle" id="handle-tegan">@tegan</h4>
+                                    <p class="trending-subtext" id="sub-tegan">World Peace Builder</p>
+                                </div>
+                            </div>
+
+                            <div class="trending-item" id="trending-user-2">
+                                <span class="trending-avatar" id="avatar-morgan">👤</span>
+                                <div class="trending-info" id="info-morgan">
+                                    <h4 class="trending-handle" id="handle-morgan">@morgan</h4>
+                                    <p class="trending-subtext" id="sub-morgan">Super Cool Project</p>
+                                </div>
+                            </div>
+
+                            <div class="trending-item" id="trending-user-3">
+                                <span class="trending-avatar" id="avatar-kendall">👤</span>
+                                <div class="trending-info" id="info-kendall">
+                                    <h4 class="trending-handle" id="handle-kendall">@kendall</h4>
+                                    <p class="trending-subtext" id="sub-kendall">Life Changing App</p>
+                                </div>
+                            </div>
+
+                            <div class="trending-item" id="trending-user-4">
+                                <span class="trending-avatar" id="avatar-alex">👤</span>
+                                <div class="trending-info" id="info-alex">
+                                    <h4 class="trending-handle" id="handle-alex">@alex</h4>
+                                    <p class="trending-subtext" id="sub-alex">No Traffic Maker</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </aside>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
